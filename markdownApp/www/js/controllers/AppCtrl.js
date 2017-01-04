@@ -51,7 +51,7 @@ angular.module('starter.controllers', [])
       headers:{
         'Content-Type' : 'application/xml',
       },
-      data : '<?xml version="1.0" encoding="UTF-8"?><getsku s="00151" r="99"><msg sku="' + $scope.searchData.value + '"/></getsku>'
+      data : '<getprd s="999" r="99"><msg prd="' + $scope.searchData.value + '"/></getprd>'
     };
     $http(req)
     .then(function(response) {
